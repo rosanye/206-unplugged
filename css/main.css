@@ -143,6 +143,14 @@ header nav ul {
     justify-content: space-around;
 }
 
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
 footer {
     flex-direction: column;
 }
@@ -387,15 +395,150 @@ f.aq {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 786px) {
+    /* Tablet Styles*/
+    /****** Homepage ******/
+    
+    .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
+    
+    /* Header */
+    header {
+        max-width: 640px;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0  25px 120px;
+        
+    }
+    
+    header .content-wrapper {
+        width: 70%;
+        justify-content: space-between;
+        margin: 0 
+    }
+    
+    header nav {
+        width: 25%;
+    }
+    
+    header nav ul {
+        justify-content: space-between;
+        padding-left: 10px;
+    }
+    
+    .header-divider {
+        display: none;
+    }
+    
+    /* Hero Area*/
+    
+    /* Aside */
+    
+    aside .content-wrapper {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+    }
+    
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width: 40%;
+        margin: 0;
+    }
+    
+    /* Features */
+    
+    .features article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        flex-basis: 50%;
+        
+    }
+    
+    .features .features-items-description {
+        width: 60%;
+    }
+    
+    /* Reviews */
+    
+    .reviews article {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .reviews article div {
+        width: 100%;
+    }
+    
+    /* Footer */
+    
+    footer .content-wrapper {
+        width: ;
+        margin: 100px 0;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer .contact {
+        margin-bottom: 0;
+    }
+    
+    footer .copyright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /******============ About Page =============*******/
+    
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    
+    .mission-content p {
+        width: 45%;
+    }
+    
+    .contact-section, .content-wrapper h2 {
+        width: 100%;
+    }
+    
+    .contact-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /******============ About Page =============*******/
+    
+    .faq .content-wrapper {
+        justify-content: space-between;
+    }
+    
+    .faq-content {
+        flex-basis: 40%;
+    }
+    
+    .faq h2 {
+        width: 100%;
+    }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+    /* Desktop Styles*/
+    
 }
 
 /* ==========================================================================
