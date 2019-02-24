@@ -237,12 +237,6 @@ footer .contact {
     margin-bottom: 50px;
 }
 
-footer .social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 footer .social-icons {
     display: flex;
     justify-content: space-around;
@@ -336,6 +330,11 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.features i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
 }
 
 .features p {
